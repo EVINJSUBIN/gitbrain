@@ -1,0 +1,88 @@
+.container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+.description {
+  margin-top: 0.5rem;
+  color: var(--foreground);
+  opacity: 0.7;
+  margin-bottom: 2rem;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.inputArea, .outputArea {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary);
+}
+
+.textarea {
+  width: 100%;
+  min-height: 300px;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--foreground);
+  font-family: var(--font-mono);
+  resize: vertical;
+}
+
+.textarea:focus {
+  outline: 1px solid var(--accent);
+}
+
+.resultBox {
+  width: 100%;
+  min-height: 300px;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  display: flex;
+  align-items: flex-start;
+}
+
+.placeholderText {
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.generateButton, .copyButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.generateButton {
+  background: var(--primary);
+  color: white;
+}
+
+.generateButton:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.copyButton {
+  background: var(--secondary);
+  color: var(--foreground);
+  border: 1px solid var(--secondary-border);
+}
+
+.copyButton:hover {
+  background: var(--secondary-border);
+}
